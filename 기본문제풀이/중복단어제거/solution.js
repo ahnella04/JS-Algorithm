@@ -5,7 +5,6 @@ function solution(s) {
             // console.log(v, i);
             if (s.indexOf(v) === i) return true;
         })
-
         return answer;
     }
 }

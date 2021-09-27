@@ -5,6 +5,7 @@ function solution(s) {
         if (s[i] === "(") {
             stack.push(s[i]);
         } else {
+            if (stack.length === 0) return "NO";
             stack.pop();
         }
     }
@@ -14,7 +15,7 @@ function solution(s) {
     } else {
         answer = "NO"
     }
-    
+
     return answer;
 }
 
